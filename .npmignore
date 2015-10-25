@@ -1,0 +1,6 @@
+.npmignore
+.jshintrc
+.gitignore
+node_modules
+test
+coverage

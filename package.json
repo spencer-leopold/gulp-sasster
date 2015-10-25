@@ -1,0 +1,44 @@
+{
+  "name": "gulp-sasster",
+  "version": "1.0.8",
+  "description": "Utility to compile sass using libsass, and watch for changes - only recompiling files that need to be.",
+  "main": "lib/gulp-sasster.js",
+  "scripts": {
+    "jshint": "jshint lib/*.js index.js --verbose",
+    "test": "mocha -R spec ./test --recursive",
+    "coverage": "istanbul cover _mocha -- -R spec ./test --recursive",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:spencer-leopold/gulp-sasster.git"
+  },
+  "keywords": [
+    "libsass",
+    "sass",
+    "scss",
+    "watch",
+    "bourbon",
+    "neat"
+  ],
+  "author": {
+    "name": "Spencer Leopold",
+    "email": "spencer.leopold@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "sasster": "*",
+    "through2": "^2.0.0"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "chai-as-promised": "^5.1.0",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.15",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5",
+    "sinon": "^1.15.3",
+    "sinon-chai": "^2.8.0"
+  }
+}
